@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Controle de Licitações</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_start">StartActivity</string>
+
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="email">Endereço de e-mail</string>
+    <string name="username">Usuário</string>
+    <string name="password">Senha</string>
+    <string name="login">Entrar</string>
+    <string name="app_name_title">Controle de\nLicitações</string>
+    <string name="error_unknown_user">O usuário informado não existe!</string>
+    <string name="error_invalid_user_password">O usuário ou senha informados são inválidos!</string>
+    <string name="processes">Processos</string>
+    <string name="account">Conta</string>
+    <string name="add_process">Adicionar processo</string>
+    <string name="new_">Novo</string>
+    <string name="no_processes_created">Nenhum processo foi criado ainda.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="city">Município</string>
+    <string name="session_date">Data da sessão</string>
+    <string name="process_description">Descrição do processo</string>
+    <string name="create_process">Criar processo</string>
+    <string name="save_process">Salvar processo</string>
+    <string name="edit_process">Editar processo</string>
+</resources>

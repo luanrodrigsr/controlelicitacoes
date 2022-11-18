@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_processes">
+
+    <fragment
+        android:id="@+id/navigation_processes"
+        android:name="com.luanrodrigsr.controlelicitacoes.ui.main.processes.ProcessesFragment"
+        android:label="@string/processes"
+        tools:layout="@layout/fragment_processes" >
+
+        <action
+            android:id="@+id/action_processesFragment_to_addProcessFragment"
+            app:destination="@id/add_process_fragment" />
+
+        <action
+            android:id="@+id/action_processesFragment_to_editProcessFragment"
+            app:destination="@id/edit_process_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.luanrodrigsr.controlelicitacoes.ui.main.account.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/add_process_fragment"
+        android:name="com.luanrodrigsr.controlelicitacoes.ui.main.processes.AddProcessFragment"
+        android:label="@string/add_process"
+        tools:layout="@layout/fragment_add_process" >
+
+        <action
+            android:id="@+id/action_addProcessFragment_to_processesFragment"
+            app:destination="@id/navigation_processes"
+            app:popUpTo="@id/navigation_processes"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_process_fragment"
+        android:name="com.luanrodrigsr.controlelicitacoes.ui.main.processes.EditProcessFragment"
+        android:label="@string/edit_process"
+        tools:layout="@layout/fragment_edit_process" >
+
+        <action
+            android:id="@+id/action_editProcessFragment_to_processesFragment"
+            app:destination="@id/navigation_processes"
+            app:popUpTo="@id/navigation_processes"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
